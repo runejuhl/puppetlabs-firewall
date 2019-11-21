@@ -6,4 +6,4 @@
 # Example: FIN,SYN,RST,ACK SYN matches packets with the SYN bit set and the
 # ACK, RST and FIN bits cleared.  Such packets are used to request TCP
 # connection initiation.
-type Firewall::Tcp_flags = Pattern[/\A(((((SYN(,ACK)?|ACK)(,FIN)?|FIN)(,RST)?|RST)(,URG)?|URG)(,PSH)?|PSH|ALL|NONE)[[:blank:]]+(((((SYN(,ACK)?|ACK)(,FIN)?|FIN)(,RST)?|RST)(,URG)?|URG)(,PSH)?|PSH|ALL|NONE)\z/]
+type Firewall::Tcp_flags = Pattern[/\A(((((SYN(,ACK)?|ACK)(,FIN)?|FIN)(,RST)?|RST)(,URG)?|URG)(,PSH)?|PSH|ALL|NONE)[[:blank:]]+(((((SYN(,ACK)?|ACK)(,FIN)?|FIN)(,RST)?|RST)(,URG)?|URG)(,PSH)?|PSH|ALL|NONE)\z/] # lint:ignore:140chars
